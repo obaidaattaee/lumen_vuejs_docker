@@ -8,8 +8,21 @@ After graduating from school, you want to sell some of your used books. You will
 
 # Get Started
 
+### backend dependencies
+change directory to backend with    `cd backend`
+then exicute `composer install`
+then change all variables in .env file 
+
+### frontend dependencies 
+
+change directory to backend with    `cd frontend`
+then exicute `npm install `
+
+
+### docker dependencies
+
 - First of all, you will need to install docker on your computer
-- run `docker-compose up -d` to start all services
+- run `docker-compose up` to start all services
 - run `docker-compose exec backend bash init.sh` to install backend dependencies, you only need to run this once first time.
 - visit [http://localhost:8888](http://localhost:8888) to see the UI
 
