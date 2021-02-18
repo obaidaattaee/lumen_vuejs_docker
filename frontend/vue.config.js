@@ -5,7 +5,7 @@ module.exports = {
     proxy: {
       "^/api": {
         target: "http://nginx:8088",
-        changeOrigin: true
+        changeOrigin: false
       }
     }
   }

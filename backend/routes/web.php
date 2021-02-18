@@ -11,13 +11,21 @@
 |
 */
 
+try {
+
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
-
-$router->get('/api/start', function () {
-    // this is a api endpoint demo, you should create a controller for your endpoint
-    return [
-        'message' => 'All requests with api prefix will go to backend'
-    ];
+$router->group(['prefix' => 'api'] , function () use($router){
+    $router->get('/test' , 'ExampleController@index');
 });
+$router->get('/api/books' , 'BookController@index');
+$router->post('/api/books/store' , 'BookController@store');
+$router->get('/api/books/{book}/show' , 'BookController@show');
+$router->delete('/api/books/{book}/delete' , 'BookController@delete');
+$router->post('/api/books/{book}/update' , 'BookController@update');
+$router->post('/api/login' , 'AuthController@login');
+
+} catch (\Throwable $th) {
+    return $th ;
+}
