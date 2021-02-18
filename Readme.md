@@ -9,11 +9,11 @@ After graduating from school, you want to sell some of your used books. You will
 # Get Started
 
 ### backend dependencies
--change directory to backend with    `cd backend`
--then excute `composer install`
--then change all variables in .env file 
--then run `php artisan key:generate` to generate unique key for this priject it will assign to APP_KEY variable in .env file
--then run `php artisan migrate:fresh --seed` to create tables in database and insert defaul admin user : `admin@admin.com` , password : `1234567890`  
+- change directory to backend with    `cd backend`
+- then excute `composer install`
+- then change all variables in .env file 
+- then run `php artisan key:generate` to generate unique key for this priject it will assign to APP_KEY variable in .env file
+- then run `php artisan migrate:fresh --seed` to create tables in database and insert defaul admin user : `admin@admin.com` , password : `1234567890`  
 
 ### frontend dependencies 
 
