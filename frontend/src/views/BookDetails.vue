@@ -1,43 +1,20 @@
 <template>
-  <div class="book-details">
-    <div class="card-group">
-      <div class="card bg-primary">
-        <div class="card-header">
-          <h2
-            class="page-section-heading text-center text-uppercase text-white"
-          >
-            {{ book.title }}
-          </h2>
-        </div>
-        <div class="card-body text-center">
-          <!-- Icon Divider-->
+  <div class="book-details justify-content-center">
+<div class="row justify-content-center">
+  <div class="card col-md-4" style="width:100%">
+  <img :src="'https://picsum.photos/200/300'" alt="Mountains" style="width:100%">
+  <div class="card-body">
+    <h5 class="card-title">{{ book.title }}</h5>
+    <p class="card-text">{{ book.description }}</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"><div>book ISBN : {{ book.isbn }}</div></li>
+    <li class="list-group-item">book price : {{ book.price }}</li>
+    <li class="list-group-item">status : {{ book.sold == 1 ? "sold" : "available" }}</li>
+    <li class="list-group-item">publis date : {{ book.published_at }}</li>
+  </ul>
 
-          <!-- About Section Content-->
-          <div class="row">
-            <div class="col-lg-12 ml-auto mr-auto">
-              <p class="lead">{{ book.description }}</p>
-            </div>
-          </div>
-          <div class="row">
-            <ul>
-              <li>
-                <div>book ISBN : {{ book.isbn }}</div>
-              </li>
-              <li>
-                <div>book price : {{ book.price }}</div>
-              </li>
-              <li>
-                <div>status : {{ book.sold == 1 ? "sold" : "available" }}</div>
-              </li>
-              <li>
-                <div>publis date : {{ book.published_at }}</div>
-              </li>
-            </ul>
-          </div>
-          <!-- About Section Button-->
-          <div class="text-center mt-4"></div>
-        </div>
-      </div>
+</div>
     </div>
   </div>
 </template>
