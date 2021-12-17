@@ -1,11 +1,5 @@
 # UpStart
 
-> Upfeat New Project Starter Kit
-
-# Project Description
-
-After graduating from school, you want to sell some of your used books. You will be creating a simple listing site for your books. The website should have a page to list the books; a page to see details of a book; ability to add/remove books; ability to mark a book as sold.
-
 # Get Started
 
 ### backend dependencies
